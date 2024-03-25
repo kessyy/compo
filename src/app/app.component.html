@@ -1,0 +1,4 @@
+<app-preloader *ngIf="isLoading | async"></app-preloader>
+<app-header-two></app-header-two>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+<app-footer></app-footer>

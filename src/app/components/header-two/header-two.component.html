@@ -1,0 +1,25 @@
+<header class="sigma_header style-5 bg-transparent shadow-none can-sticky">
+  <div class="container">
+    <div class="sigma_header-middle pl-4 pr-4">
+      <div class="navbar">
+        <div class="sigma_logo-wrapper">
+          <a routerLink="/" class="sigma_logo">
+            <img src="../../../assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="sigma_header-controls style-2">
+            <ul class="sigma_header-controls-inner">
+              <li class="cart-icon">
+                <a routerLink="/cart" class="sigma_btn btn-sm">
+                  <i class="fal fa-shopping-cart"></i>
+                  <span class="badge">{{ totalPriceInCart }}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

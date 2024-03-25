@@ -1,0 +1,31 @@
+.test-extra-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.slick-initialized, .slick-slider {
+  overflow: hidden;
+  position: relative; 
+
+  .slick-next:before, .slick-prev:before, .slick-arrow {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    opacity: 1;
+    visibility: visible;
+    z-index: 999; 
+    color: #09529b !important;
+  }
+
+  .slick-prev {
+    left: 20px; 
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+}

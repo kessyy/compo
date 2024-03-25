@@ -1,0 +1,462 @@
+/* Header */
+.sigma_header {
+  position: fixed !important;
+  background-color: #fff;
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.03);
+
+  .sigma_header-middle {
+    background-color: #0046f9 !important;
+
+    .menu-item {
+      a {
+        color: white  !important;
+      }
+
+      &.menu-item-has-children {
+        .menu-item {
+          a {
+            color: var(--thm-secondary) !important;
+          }
+        }
+      }
+    }
+
+    .sub-menu li a {
+      border-bottom: 1px solid var(--thm-border);
+      padding: 15px;
+      display: flex;
+      font-weight: 400;
+      align-items: center;
+      color: var(--thm-b-text);
+      position: relative;
+    }
+
+    .sigma_btn {
+      padding: 8px 18px;
+
+      i {
+        font-weight: 600;
+      }
+
+      &.register {
+        background-color: white;
+        color: var(--thm-secondary);
+        border: 2px solid var(--thm-secondary);
+
+        i {
+          color: var(--thm-secondary);
+        }
+
+        &:hover {
+          color: white;
+          background-color: var(--thm-secondary);
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Button styles */
+button,
+.sigma_btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  background-color: #316cff;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 17px 30px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  border-radius: 0;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  &.btn-sm {
+    font-size: 14px;
+    padding: 12px 20px;
+    text-transform: capitalize;
+  }
+}
+
+/* Style 16 */
+.sigma_service-sec.style-16.section {
+  padding: 100px 0 70px;
+}
+
+.sigma_service.style-16 {
+  padding: 10px 5px 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100px;
+
+  &:hover {
+    background-color: transparent;
+    transform: none;
+  }
+
+  .sigma_service-thumb {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06);
+    margin: -60px 4px 5px;
+    background-color: #fff;
+
+    i {
+      font-size: 44px;
+      color: var(--thm-secondary);
+    }
+  }
+
+  .sigma_service-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .btn-link {
+      font-size: 0;
+      font-weight: 600;
+      margin-top: 12px;
+      i {
+        font-size: 26px;
+        margin-left: 0;
+      }
+    }
+
+    &:hover {
+      .btn-link {
+        font-size: 16px;
+        i {
+          margin-left: 12px;
+        }
+      }
+    }
+    h5 {
+      a {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.sigma_service.style-18 {
+  text-align: left;
+  padding: 30px 20px 20px;
+  margin-bottom: 65px;
+
+  &:hover {
+    background-color: transparent;
+    transform: none;
+  }
+
+  .sigma_service-thumb {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06);
+    margin: -60px 0 20px;
+    background-color: #fff;
+
+    i {
+      font-size: 44px;
+      color: var(--thm-secondary);
+    }
+  }
+}
+
+.style-16 {
+  .sigma_service-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    h5 {
+      a {
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }
+}
+/* Ends Style 16 */
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--thm-font);
+  font-weight: 600;
+  color:  #0046f9 ;
+
+  &.h1 {
+    font-size: 52px;
+  }
+
+  &.h2 {
+    font-size: 44px;
+  }
+
+  &.h3 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &.h4 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  &.h5 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  &.h6 {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color:  #0046f9 ;
+  transition: .3s;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+a:hover {
+  color: #0046f9 ;
+  text-decoration: none;
+}
+
+.sigma_footer {
+  background-color: #FCF7FF;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+
+  & .sigma_footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+
+    li {
+      position: relative;
+      + li {
+        margin-left: 20px;
+      }
+      a {
+        position: relative;
+        color: var(--thm-b-text);
+        font-weight: 400;
+        &:hover {
+          color: var(--thm-base);
+        }
+      }
+    }
+  }
+
+  & .sigma_footer-copyright {
+    margin-top: 25px;
+    p a {
+      color: #0046f9;
+      font-weight: 600;
+      &:hover {
+        color: var(--thm-base);
+      }
+    }
+  }
+
+  & .sigma_footer-bottom {
+    border-top: 1px solid var(--thm-border);
+    padding: 30px 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  & .sigma_footer-widget {
+    padding-bottom: 50px;
+    height: 100%;
+  }
+
+  /* style 5 */
+  &.style-5 .sigma_footer-links {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    li + li {
+      margin-left: 0;
+      margin-top: 14px;
+    }
+  }
+
+  &.style-5 .sigma_footer-bottom {
+    margin-top: 50px;
+  }
+
+  &.style-5 .sigma_footer-bottom .sigma_footer-links,
+  &.style-6 .sigma_footer-bottom .sigma_footer-links {
+    flex-direction: row;
+    li + li {
+      margin-left: 15px;
+      padding-left: 15px;
+      margin-top: 0;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 16px;
+        background-color: #999b9f;
+      }
+    }
+  }
+
+  &.style-5 .sigma_info-wrapper.style-18 {
+    background-color: #1c1e22;
+  }
+}
+
+
+/* CSS styles to be refactred */
+.navbar {
+  padding: 0;
+}
+
+.sigma_header .sigma_logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.sigma_header .sigma_logo-wrapper .sigma_logo{
+  max-width: 130px;
+}
+
+.sigma_header .navbar-nav {
+  flex-direction: row;
+}
+
+.sigma_header .navbar-nav li {
+  position: relative;
+  transition: 0.3s;
+}
+
+.sigma_header .navbar-nav li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-family: var(--thm-font);
+  position: relative;
+  font-size: 16px;
+}
+
+.sigma_header .navbar-nav li:first-child>a {
+  padding-left: 0;
+}
+
+.sigma_header .navbar-nav li:last-child>a {
+  padding-right: 0;
+}
+
+.sigma_header .navbar-nav li a:hover,
+.sigma_header .navbar-nav li.active>a {
+  color: var(--thm-base);
+}
+
+.sigma_header .navbar-nav li .sub-menu {
+  position: absolute;
+  top: 110%;
+  min-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.03);
+  transition: 0.3s;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sigma_header .navbar-nav li .sub-menu li a {
+  border-bottom: 1px solid var(--thm-border);
+  padding: 15px;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  color: var(--thm-b-text);
+  position: relative;
+}
+
+.sigma_header .navbar-nav li .sub-menu li:last-child a {
+  border-bottom: none;
+}
+
+.sigma_header .navbar-nav li.menu-item-has-children:hover>.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.sigma_header .navbar-nav li.menu-item-has-children .sub-menu li .sub-menu {
+  left: 100%;
+  top: 0;
+}
+
+.sigma_header-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 55;
+}
+
